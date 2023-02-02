@@ -1,0 +1,183 @@
+  /* Color Palettes
+  Matching Gradients
+
+  #702828
+  #8D3856
+  #99538C
+  #8E76C3
+  #639BEF
+  #00C1FF
+
+  Small Switch Palette
+
+  #702828
+  #F8EBEC
+  #AC717A
+
+  */
+  /*Here is the Font-Face for the Website and the HTML CSS for the whole Site*/
+    @font-face {
+      font-family: "EmblemaOne", Verdana, Helvetica, sans-serif;
+      src: url("assets/fonts/EmblemaOne-Regular.ttf") format("truetype");
+  }
+  html { 
+      font-family: "EmblemaOne", Verdana, Helvetica, sans-serif;
+      src: url("assets/fonts/EmblemaOne-Regular.ttf") format("truetype");
+  }
+  body {
+      background: #702828;
+      color: #F8EBEC;
+  }
+      /*Website Name Above Nav Bar*/
+  
+  .mysite_desc {
+      position: relative;
+  }
+  h1#name {
+      margin: 0;
+      text-align: left;
+      font-size: 2rem;
+      line-height: 1.8rem;
+      width: 100%;
+      top: 26px;
+      right: 0;
+  }
+  
+  .description {
+      font-size: 1.6rem;
+  }
+  
+      /*Header and NAV Bar*/
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+  }
+  
+  nav{
+      order: 1;
+  }
+  
+  a{
+    border-style: solid;
+    border-width: 0.2 rem;
+    border-color: #F8EBEC;
+    border-radius: 15%;
+    background-color: #574144;
+    font-size: 1.2rem;
+  }
+  li, a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  .logo {
+      cursor: pointer;
+      order: 3;
+      font-size: 1.2rem;
+  }
+  
+  .nav__links {
+      list-style: none;
+  }
+  
+  .nav__links li {
+      display: inline-block;
+      padding: 0px 20px;
+  }
+  .nav__links li a {
+      transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover{
+      color: #00C1FF;
+  }
+      /*Cool Picture Pop Out with Name and everything kinda sweet this is from Instagram lmao*/
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .container .box {
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      margin: 3rem;
+    }
+    .container .box:hover .imgBox {
+      transform: translate(-1.5rem, -1.5rem);
+    }
+    .container .box:hover .content {
+      transform: translate(3.5rem, 3.5rem);
+    }
+    .imgBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .imgBox img {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      resize: both;
+    }
+    
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      z-index: 1;
+      align-items: flex-end;
+      text-align: center;
+      transition: 0.5s ease-in-out;
+    }
+    
+    .content h2 {
+      display: block;
+      font-size: 2rem;
+      color: #111;
+      font-weight: 500;
+      line-height: 2rem;
+      letter-spacing: 1px;
+    }
+    
+    .content span {
+      color: #555;
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    /*fixed */
+    .image_href{
+      background: none;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      .container .box:hover .content {
+        transform: translate(0, 3.5rem);
+      }
+      .container .box:hover .imgBox {
+        transform: translate(0, -3.5rem);
+      }
+    }
+  
