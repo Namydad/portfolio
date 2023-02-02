@@ -58,13 +58,13 @@
   nav{
       order: 1;
   }
-  
-  a{
+  .link{
     border-style: solid;
-    border-width: 0.2 rem;
+    border-width: 2px;
     border-color: #F8EBEC;
-    border-radius: 15%;
-    background-color: #574144;
+    border-radius: 5%;
+    background-color: #657638;
+    padding: 0.2rem;
     font-size: 1.2rem;
   }
   li, a{
@@ -162,7 +162,6 @@
     }
     
     .content span {
-      color: #555;
       font-size: 1.4rem;
       font-weight: 300;
       letter-spacing: 2px;
